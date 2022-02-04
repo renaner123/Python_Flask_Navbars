@@ -4,7 +4,9 @@
 
 Este projeto foi desenvolvido para auxiliar nos atendimentos da equipe, sendo uma "view local" dos 
 equipamentos, que muitas vezes não estão disponíveis na rede para acesso. Basicamente pra 
-alimentar o projeto é necessário as prints de cada menu/opção além de construir uma página HTML contendo os menus/opções que o equipamento dispõem, alem de servir como exemplo de uso de navbars. Para fins de tornar utilizável em outros lugares, criei esse esboço para ser uma forma simples e fácil de utilizar.
+alimentar o projeto é necessário as prints de cada menu/opção além de construir uma página HTML contendo os menus/opções que o equipamento dispõem. Também pode servir como exemplo de uso de navbars. 
+
+Para fins de tornar utilizável em outros lugares, criei esse esboço para ser uma forma simples e fácil de utilizar.
 ## Interface
 
 ![](static/interface.png)
@@ -48,11 +50,11 @@ alimentar o projeto é necessário as prints de cada menu/opção além de const
 
 Se não ocorrer nenhum erro, aplicação será iniciada no IP de localhost na porta 5000
 
-![](static/running.png)
+![](static/running.PNG)
 
 ## Adicionando novos menus no Sidebar
 
-No arquivo [app.py](app.py) é necessário criar uma nova rota para para adicionar um novo menu no Sidebar, no caso, uma nova página de um produto por exemplo. Rota a ser criada deverá ficar como essa abaixo. Ela será utilizada para receber o endereço da imagem que será exibida e retornar para a página de destino.
+No arquivo [app.py](app.py) é necessário criar uma nova rota para adicionar um novo menu no Sidebar, no caso, uma nova página de um produto por exemplo. Rota a ser criada deverá ficar como essa abaixo. Ela será utilizada para receber o endereço da imagem que será exibida e retornar para a página de destino.
 
 ```python
 @app.route('/route', methods=['GET', 'POST'])
