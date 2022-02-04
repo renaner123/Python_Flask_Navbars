@@ -1,5 +1,8 @@
 ## Exemplo de utilização de Navbars, Sidebars com uso de Bootstrap, Python e Flask
 
+## Proposta
+
+Este projeto foi desenvolvido para mostrar os menus/páginas de configurações de equipamentos utilizados em um ambiente de trabalho. Sendo uma "view local" dos equipamentos que por ventura não se encontram mais disponíveis para acesso. Basicamente pra alimentar o projeto é necessário as prints de cada menu/opção que o equipamento dispõem. Para fins de tornar utilizável em outros lugares, criei esse esqueleto para ser uma forma simples e fácil de utilizar. 
 
 ## Como executar
 
@@ -49,7 +52,7 @@ def imgRoute3():
     return render_template('page.html', title='Page 3', form=imgSrc), 200
 ```
 
-Após ter a rota criada, é necessário criar a página HTML dentro da pasta [templates](/templates) que exibirá a página produto em questão com seus navbars, pode usar como modelo as já criadas. Elas foram criadas usando o extends do Flask. 
+Após ter a rota criada, é necessário criar a página HTML dentro da pasta [templates](/templates) que exibirá a página do produto em questão com seus navbars, pode usar como modelo as já criadas. Elas foram criadas usando o extends do Flask. 
 
 Após isso é necessário adicionar uma nova linha <li> dentro do <ul> no navbar do arquivo [base_test.html](templates/base_test.html) para inserir uma linha no menu lateral
 
