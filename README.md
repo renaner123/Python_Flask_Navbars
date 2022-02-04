@@ -3,6 +3,8 @@
 
 ## Como executar
 
+  É fundamental o uso de ambiente virtual Python, a não ser que queira instalar as depências na máquina local.
+
   - Windows: 
 
     Para executar na plataforma windows é necessário apenas executar o script [executar.sh](executar.sh) ou se preferir fazer manualmente, pode usar os seguintes comandos estando na pasta raíz.
