@@ -1,12 +1,10 @@
-## Exemplo de utilização de Navbars, Sidebars com uso de Bootstrap, Python e Flask
+## Exemplo de utilização de Navbars e menu lateral com uso de Bootstrap, Python e Flask
 
 ## Proposta
 
 Este projeto foi desenvolvido para auxiliar nos atendimentos da equipe, sendo uma "view local" dos 
 equipamentos, que muitas vezes não estão disponíveis na rede para acesso. Basicamente pra 
 alimentar o projeto é necessário as prints de cada menu/opção que o equipamento dispõem, alem de servir como exemplo de uso de navbars. Para fins de tornar utilizável em outros lugares, criei esse esboço para ser uma forma simples e fácil de utilizar.
-Foi desenvolvindo usando a linguagem de programação Python, rodando em cima de um "servidor" Flask.
-
 ## Interface
 
 ![](static/interface.png)
@@ -165,3 +163,10 @@ Para completar a funcionalidade, foi adionado o seguinte css.
         background-color: #eee; /* Add a hover effect to all links, except for headers */
     }
 ```
+## Referências
+
+- https://getbootstrap.com/docs/4.0/components/navbar/
+- https://flask.palletsprojects.com/en/2.0.x/quickstart/
+- https://github.com/bcd29008/python-flask-appweb
+- https://www.w3schools.com/howto/howto_js_filter_lists.asp
+- https://stackoverflow.com/questions/18023493/bootstrap-dropdown-sub-menu-missing
