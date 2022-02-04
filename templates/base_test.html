@@ -1,0 +1,142 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block styles %}
+    {{ super() }}
+    {{ fontawesome_html() }}
+{#    <meta http-equiv="refresh" content="5" >#}
+    <!DOCTYPE html>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/svgs/solid/rocket.svg>
+    <link rel="stylesheet" type="text/css" href="../static/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+{% endblock %}
+
+{% block html_attribs %} lang="pt_BR"{% endblock %}
+
+{% if title %}
+    <title>Aplicação Web {{ title }}</title>
+{% else %}
+    <title>Aplicação Web</title>
+
+{% endif %}
+
+
+{% block content %}
+{#    <body onload="Timer()">#}
+<div id="geral" class="square">
+        <div  id="cabecalho" >
+
+            <p id="pcabecalho">
+                <h1>Any title</h1>
+            </p>
+        </div>
+            <div id="conteudo-1" class="navbar navbar-dark bg-dark container">
+                 <nav>
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                    <ul id="myUL" class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="btn btn-dark btn-lg" href="/route1?path=work-in-progress.png">Product 1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn btn-dark btn-lg" href="/route2?path=work-in-progress.png" >Product 2</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="btn btn-dark btn-lg" href="/route3?path=work-in-progress.png" >Product 3</a>
+                      </li>
+
+                    </ul>
+                 </nav>
+            </div>
+
+            <div id="conteudo-2">
+
+                {% block app_content %}
+
+                {% endblock %}
+
+            </div>
+
+    </div>
+{#    </body>>#}
+{% endblock %}
+
+
+{% block scripts %}
+    {{ super() }}
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+    function Imagem(elm){
+        $.ajax({
+             url : "/unniti/prog",
+             type : 'POST',
+             data : {
+                  path : elm
+             },
+        })
+        .done(function(msg){
+
+        })
+        .fail(function(jqXHR, textStatus, msg){
+             {#alert(msg);#}
+        });
+    }
+
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+    // Avoid following the href location when clicking
+    event.preventDefault();
+    // Avoid having the menu to close when clicking
+    event.stopPropagation();
+    // If a menu is already open we close it
+    $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
+    // opening the one you clicked on
+    $(this).parent().addClass('open');
+
+    var menu = $(this).parent().find("ul");
+    var menupos = menu.offset();
+
+    if ((menupos.left + menu.width()) + 30 > $(window).width()) {
+        var newpos = - menu.width();
+    } else {
+        var newpos = $(this).parent().width();
+    }
+    menu.css({ left:newpos });
+
+    });
+
+
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+
+    </script>
+
+
+
+
+{% endblock %}
+
+</html>
+

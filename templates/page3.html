@@ -1,0 +1,248 @@
+{% extends "base_test.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+      <nav class="navbar navbar-expand-lg navbar-light">
+
+      <a class="navbar-brand" href="#">Page 3</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <div class="btn-group btn-group-lg">
+                  <a class="btn dropdown-toggle btn-primary btn-lg" data-toggle="dropdown" href="#">
+                    Menu 1
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 1</a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 2</a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 3</a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 4</a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 5</a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 6</a></li>
+                  </ul>
+                </div>
+          </li>
+          <li class="nav-item">
+              <div class="btn-group btn-group-lg">
+                  <a class="btn dropdown-toggle btn-primary btn-lg" data-toggle="dropdown" href="#">
+                    Menu 2
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 1</a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 2</a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 3</a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 4 </a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 5</a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 6</a></li>
+                    <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 7</a></li>
+                  </ul>
+                </div>
+          </li>
+          <li class="nav-item">
+                  <div class="btn-group btn-group-lg ">
+                     <ul class="nav navbar-nav">
+                        <a class="btn dropdown-toggle btn-primary btn-lg" data-toggle="dropdown" href="#">Menu 3 </a>
+                          <ul class="dropdown-menu">
+
+                            <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Action 1</a>
+                              <ul class="dropdown-menu">
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 1</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 2</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 3</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 4</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 5</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 6</a></li>
+
+                              </ul>
+                            </li>
+
+                            <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Action 2</a>
+                              <ul class="dropdown-menu">
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 1</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 2</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 3</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 4</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 5</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 6</a></li>
+                              </ul>
+                            </li>
+
+                            <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Action 3</a>
+                              <ul class="dropdown-menu">
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 1</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 2</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 3</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 4</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 5</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 6</a></li>
+                              </ul>
+                            </li>
+
+                            <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Action 4</a>
+                              <ul class="dropdown-menu">
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 1</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 2</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 3</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 4</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 5</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 6</a></li>
+                              </ul>
+                            </li>
+
+                            <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Action 5</a>
+                              <ul class="dropdown-menu">
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 1</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 2</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 3</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 4</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 5</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 6</a></li>
+                              </ul>
+                            </li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 1</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 2</a></li>
+                                  <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Action 3</a></li>
+                          </ul>
+                     </ul>
+                  </div>
+          </li>
+
+          <li class="nav-item">
+              <div class="btn-group btn-group-lg">
+                  <ul class="nav navbar-nav">
+                      <a class="btn dropdown-toggle btn-primary btn-lg" data-toggle="dropdown" href="#"> Menu 4  </a>
+                      <ul class="dropdown-menu">
+                        <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Action 1</a>
+                          <ul class="dropdown-menu">
+
+                            <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub action 1</a>
+                              <ul class="dropdown-menu">
+                                <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                              </ul>
+
+                              <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub action 2</a>
+                                  <ul class="dropdown-menu">
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                  </ul>
+                              </li>
+                              <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub action 3</a>
+                                  <ul class="dropdown-menu">
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                  </ul>
+                              </li>
+                              <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub action 4</a>
+                                  <ul class="dropdown-menu">
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                  </ul>
+                              </li>
+                              <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub action 5</a>
+                                  <ul class="dropdown-menu">
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                    <li class="menu-item "><a href="/route3?path=work-in-progress.png">Other action</a></li>
+                                  </ul>
+                              </li>
+
+                            </li>
+
+                          </ul>
+                        </li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 1</a></li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 2</a></li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 3</a></li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 4</a></li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 5</a></li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 6</a></li>
+                      </ul>
+                  </ul>
+              </div>
+          </li>
+
+          <li class="nav-item">
+              <div class="btn-group btn-group-lg">
+                  <a class="btn dropdown-toggle btn-primary btn-lg" data-toggle="dropdown" href="#">
+                    Menu 5
+                  </a>
+                  <ul class="dropdown-menu">
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 1</a></li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 2</a></li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 3</a></li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 4</a></li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 5</a></li>
+                          <li><a tabindex="-1" href="/route3?path=work-in-progress.png">Sub action 6</a></li>
+                  </ul>
+              </div>
+          </li>
+
+          <li class="nav-item">
+
+        </ul>
+
+    </nav>
+    <div>
+        <embed src="/static/{{ form }}"  />
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+    function Imagem(elm){
+        $.ajax({
+             url : "#",
+             type : 'POST',
+             data : {
+                  path : elm
+             },
+        })
+        .done(function(msg){
+
+        })
+        .fail(function(jqXHR, textStatus, msg){
+             {#alert(msg);#}
+        });
+    }
+
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+    // Avoid following the href location when clicking
+    event.preventDefault();
+    // Avoid having the menu to close when clicking
+    event.stopPropagation();
+    // If a menu is already open we close it
+    $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
+    // opening the one you clicked on
+    $(this).parent().addClass('open');
+
+    var menu = $(this).parent().find("ul");
+    var menupos = menu.offset();
+
+    if ((menupos.left + menu.width()) + 30 > $(window).width()) {
+        var newpos = - menu.width();
+    } else {
+        var newpos = $(this).parent().width();
+    }
+    menu.css({ left:newpos });
+
+});
+
+    </script>
+
+
+
+
+{% endblock %}
