@@ -4,7 +4,7 @@
 
 Este projeto foi desenvolvido para auxiliar nos atendimentos da equipe, sendo uma "view local" dos 
 equipamentos, que muitas vezes não estão disponíveis na rede para acesso. Basicamente pra 
-alimentar o projeto é necessário as prints de cada menu/opção que o equipamento dispõem, alem de servir como exemplo de uso de navbars. Para fins de tornar utilizável em outros lugares, criei esse esboço para ser uma forma simples e fácil de utilizar.
+alimentar o projeto é necessário as prints de cada menu/opção além de construir uma página HTML contendo os menus/opções que o equipamento dispõem, alem de servir como exemplo de uso de navbars. Para fins de tornar utilizável em outros lugares, criei esse esboço para ser uma forma simples e fácil de utilizar.
 ## Interface
 
 ![](static/interface.png)
@@ -45,6 +45,10 @@ alimentar o projeto é necessário as prints de cada menu/opção que o equipame
     # para executar a aplicação
     python3 app.py
     ```
+
+Se não ocorrer nenhum erro, aplicação será iniciada no IP de localhost na porta 5000
+
+![](static/running.png)
 
 ## Adicionando novos menus no Sidebar
 
@@ -170,3 +174,5 @@ Para completar a funcionalidade, foi adionado o seguinte css.
 - https://github.com/bcd29008/python-flask-appweb
 - https://www.w3schools.com/howto/howto_js_filter_lists.asp
 - https://stackoverflow.com/questions/18023493/bootstrap-dropdown-sub-menu-missing
+
+
