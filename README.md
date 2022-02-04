@@ -2,7 +2,14 @@
 
 ## Proposta
 
-Este projeto foi desenvolvido para mostrar os menus/páginas de configurações de equipamentos utilizados em um ambiente de trabalho. Sendo uma "view local" dos equipamentos que por ventura não se encontram mais disponíveis para acesso. Basicamente pra alimentar o projeto é necessário as prints de cada menu/opção que o equipamento dispõem. Para fins de tornar utilizável em outros lugares, criei esse esqueleto para ser uma forma simples e fácil de utilizar. 
+Este projeto foi desenvolvido para auxiliar nos atendimentos da equipe, sendo uma "view local" dos 
+equipamentos, que muitas vezes não estão disponíveis na rede para acesso. Basicamente pra 
+alimentar o projeto é necessário as prints de cada menu/opção que o equipamento dispõem, alem de servir como exemplo de uso de navbars. Para fins de tornar utilizável em outros lugares, criei esse esboço para ser uma forma simples e fácil de utilizar.
+Foi desenvolvindo usando a linguagem de programação Python, rodando em cima de um "servidor" Flask.
+
+## Interface
+
+![](static/interface.png)
 
 ## Como executar
 
@@ -70,6 +77,7 @@ Após isso é necessário adicionar uma nova linha <li> dentro do <ul> no navbar
 
 ## Informações
 
+
 Para os menus do dropdown funcionar, foi necessário inserir nas páginas na parte de scrips os seguintes scripts. Podem ser alterados conforme a necessiade.
 
 ```js
@@ -105,7 +113,9 @@ e no arquivo de estilo.css
     .dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
 ```
 
-Para o funcionamento do menu de pesquisa do Siderbar, foi necessário adicionar o sequinte script na página [base_test](templates/base_test.html)
+---------------------
+
+Para o funcionamento do menu de pesquisa do menu lateral, foi necessário adicionar o seguinte script na página [base_test](templates/base_test.html)
 
 
 ```js
@@ -130,7 +140,7 @@ Para o funcionamento do menu de pesquisa do Siderbar, foi necessário adicionar 
     }
 ```
 
-Para completar o visual, foi adionado o seguinte css.
+Para completar a funcionalidade, foi adionado o seguinte css.
 
 ```css
     #myInput {
