@@ -1,0 +1,160 @@
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.nav-link navbar-nav{
+  color: #fff;
+    font-size: 20px;
+    display: flex;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
+
+
+.login-form{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form h3{
+    text-align: center;
+    color: #333;
+}
+.login-container form{
+    padding: 10%;
+}
+/*Quebranco pagina em partes*/
+#geral {
+    width:auto;
+    margin:0 auto;
+    height: auto;
+    background:#ddd;
+}
+#cabecalho {
+    padding:10px;
+	background:#00A335;
+    width: auto;
+}
+#conteudo-1 {
+    float:left;
+    /* diminuimos a largura para não quebrar o layout.
+	 * valor antigo 220
+	*/
+	width:150px;
+    height: 800px;
+    background:#bfb;
+	padding:15px;
+    align-items: normal;
+}
+
+
+#conteudo-2 {
+    float:left;
+    width:82%;
+    height: 100%;
+    background:white;
+	padding:10px;
+}
+
+
+#rodape {
+    clear:both;
+    background:#ff9;
+	padding:10px;
+}
+.square {
+    background: #000;
+    width: 50vw;
+    height: 50vw;
+}
+.square h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+}
+
+.link {
+  background-color: transparent;
+  border: 0;
+  color: purple;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  text-decoration: underline;
+}
+#cabecalho img {
+    display: inline-block;
+    float: left;
+}
+button{
+    background-color: red;
+    padding: 10px;
+}
+embed{
+    margin-left: 10px;
+    align-items: center;
+}
+
+.btn-group .dropdown-menu{
+    font-size: medium;
+}
+
+.btn-group{
+    padding-right: 3px;
+}
+
+#conteudo-1 ul li{
+    display: block;
+    position: relative;
+    top:-200px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+
+.dropdown:hover>.dropdown-menu {
+     display: block;
+}
+/*
+Para funcionar os submenus dos navbar do bootstrap
+ */
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+/*.dropdown-submenu:hover>.dropdown-menu{display:block;}*/
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+.dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+
+
+/* para filtro de busca da lista do sidebar
+
+ */
+
+#myInput {
+  background-image: url('search_icon.png'); /* Add a search icon to input */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  height: 20px;
+  font-size: 12px; /* Increase font-size */
+  padding: 5px 5px 5px 20px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 10px; /* Add some space below the input */
+  display: block;
+  position: relative;
+  top:-200px;
+}
+
+#myUL li a {
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
