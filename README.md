@@ -65,7 +65,7 @@ def imgRoute3():
 
 Após ter a rota criada, é necessário criar a página HTML dentro da pasta [templates](/templates) que exibirá a página do produto em questão com seus navbars, pode usar como modelo as já criadas. Elas foram criadas usando o extends do Flask. 
 
-Após isso é necessário adicionar uma nova linha "<li>" dentro do "<ul>" no navbar do arquivo [base_test.html](templates/base_test.html) para inserir uma linha no menu lateral
+Após isso é necessário adicionar uma nova linha li dentro do ul no navbar do arquivo [base_test.html](templates/base_test.html) para inserir uma linha no menu lateral
 
 ```html
     <div id="conteudo-1" class="navbar navbar-dark bg-dark container">
